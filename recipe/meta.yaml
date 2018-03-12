@@ -55,7 +55,6 @@ about:
   summary: It is sometimes useful to perform a computation in a separate R process, without affecting
     the current R process at all. This packages does exactly that.
   license_family: MIT
-  license_file: LICENSE
 
 extra:
   recipe-maintainers:
