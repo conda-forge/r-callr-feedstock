@@ -14,14 +14,16 @@ Summary: It is sometimes useful to perform a computation in a separate R process
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/r-callr-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/r-callr-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/r-callr-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/r-callr-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/r-callr-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/r-callr-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-callr-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-callr-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/r-callr-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-callr-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-callr-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-callr-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-callr/badges/version.svg)](https://anaconda.org/conda-forge/r-callr)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-callr/badges/downloads.svg)](https://anaconda.org/conda-forge/r-callr)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-r--callr-green.svg)](https://anaconda.org/conda-forge/r-callr) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r-callr.svg)](https://anaconda.org/conda-forge/r-callr) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/r-callr.svg)](https://anaconda.org/conda-forge/r-callr) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r-callr.svg)](https://anaconda.org/conda-forge/r-callr) |
 
 Installing r-callr
 ==================
