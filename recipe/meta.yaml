@@ -1,4 +1,4 @@
-{% set version = '2.0.2' %}
+{% set version = "3.0.0" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,11 +12,11 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/callr_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/callr/callr_{{ version }}.tar.gz
-  sha256: 778595e3f0b08f4e33a3103bd8e84a183945074f9e7404cdee8d72b7d3b8a154
+  sha256: e36361086c65660a6ecbbc09b5ecfcddee6b59caf75e983e48b21d3b8defabe7
 
 build:
   merge_build_host: True  # [win]
-  number: 1
+  number: 0
   skip: true  # [win32]
 
   rpaths:
