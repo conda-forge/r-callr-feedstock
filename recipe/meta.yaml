@@ -1,5 +1,4 @@
-{% set version = '2.0.2' %}
-
+{% set version = '3.0.0' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,50 +9,39 @@ package:
 source:
   fn: callr_{{ version }}.tar.gz
   url:
-    - https://cran.r-project.org/src/contrib/callr_{{ version }}.tar.gz
-    - https://cran.r-project.org/src/contrib/Archive/callr/callr_{{ version }}.tar.gz
-  sha256: 778595e3f0b08f4e33a3103bd8e84a183945074f9e7404cdee8d72b7d3b8a154
+    - {{ cran_mirror }}/src/contrib/callr_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/Archive/callr/callr_{{ version }}.tar.gz
+  sha256: e36361086c65660a6ecbbc09b5ecfcddee6b59caf75e983e48b21d3b8defabe7
 
 build:
   merge_build_host: True  # [win]
-  number: 1
+  number: 0
   skip: true  # [win32]
-
   rpaths:
     - lib/R/lib/
     - lib/
 
 requirements:
   build:
-    - posix                # [win]
-    - {{ compiler('c') }}        # [unix]
-    - {{ compiler('m2w64_c') }}  # [win]
-    - {{ compiler('cxx') }}        # [unix]
-    - {{ compiler('m2w64_cxx') }}  # [win]
+    - {{posix}}zip               # [win]
   host:
     - r-base
     - r-r6
-    - r-assertthat
-    - r-crayon
-    - r-debugme
-    - r-testthat
-
+    - r-base64enc
+    - r-processx >=3.2.0
   run:
     - r-base
     - r-r6
-    - r-assertthat
-    - r-crayon
-    - r-debugme
-    - r-testthat
+    - r-base64enc
+    - r-processx >=3.2.0
 
 test:
   commands:
-    - $R -e "library('callr')"  # [not win]
+    - $R -e "library('callr')"           # [not win]
     - "\"%R%\" -e \"library('callr')\""  # [win]
 
 about:
-  home: https://cran.r-project.org/package=callr
-  dev_url: https://github.com/r-lib/callr
+  home: https://github.com/r-lib/callr#readme
   license: MIT
   summary: It is sometimes useful to perform a computation in a separate R process, without affecting
     the current R process at all. This packages does exactly that.
@@ -61,7 +49,9 @@ about:
 
 extra:
   recipe-maintainers:
-    - jdblischak
     - johanneskoester
     - bgruening
     - daler
+    - jdblischak
+    - cbrueffer
+    - dbast
