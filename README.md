@@ -14,9 +14,8 @@ Summary: It is sometimes useful to perform a computation in a separate R process
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-callr-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-callr-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/r-callr-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-callr-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-callr-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-callr-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/r-callr-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/r-callr-feedstock)
 
 Current release info
 ====================
