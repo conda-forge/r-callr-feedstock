@@ -1,4 +1,4 @@
-{% set version = "3.4.2" %}
+{% set version = "3.4.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/callr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/callr/callr_{{ version }}.tar.gz
-  sha256: cca155a38474c55906a9eaa58d4ae6fff0facf13926a2ccda0cef3a528b8b42d
+  sha256: 01b7277f20c1d662c6bebbfa2798d179922b36d4148b4298853579aeda0382b5
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -40,11 +40,10 @@ test:
 about:
   home: https://github.com/r-lib/callr#readme
   license: MIT
-  summary: It is sometimes useful to perform a computation in a separate R process, without affecting
-    the current R process at all. This packages does exactly that.
+  summary: It is sometimes useful to perform a computation in a separate R process, without affecting the current R process at all. This packages does exactly that.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
