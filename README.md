@@ -5,7 +5,7 @@ Home: https://github.com/r-lib/callr#readme
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: It is sometimes useful to perform a computation in a separate R process, without affecting the current R process at all. This packages does exactly that.
 
