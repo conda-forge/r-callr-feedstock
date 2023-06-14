@@ -1,11 +1,11 @@
-About r-callr
-=============
+About r-callr-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-callr-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/r-lib/callr#readme
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-callr-feedstock/blob/main/LICENSE.txt)
 
 Summary: It is sometimes useful to perform a computation in a separate R process, without affecting the current R process at all. This packages does exactly that.
 
