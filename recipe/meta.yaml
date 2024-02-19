@@ -1,4 +1,4 @@
-{% set version = "3.7.3" %}
+{% set version = "3.7.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/callr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/callr/callr_{{ version }}.tar.gz
-  sha256: 567bfedf073a1d4c5785f0553341608a214938110567b9a6495ff20ebb2fd04e
+  sha256: 69aa3645c3ef23f2a0c0e1ca014eb5e74a17d7bebcedede9a4bb5d5771e757b3
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
