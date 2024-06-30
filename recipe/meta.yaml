@@ -1,6 +1,5 @@
 {% set version = "3.7.6" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-callr
@@ -13,8 +12,7 @@ source:
   sha256: e4bce367e869e42eaeea05566d2033d8cee2103179b11cd9a401440b58a351f8
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
