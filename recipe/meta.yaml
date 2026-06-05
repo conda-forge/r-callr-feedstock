@@ -1,4 +1,4 @@
-{% set version = "3.7.6" %}
+{% set version = "3.8.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/callr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/callr/callr_{{ version }}.tar.gz
-  sha256: e4bce367e869e42eaeea05566d2033d8cee2103179b11cd9a401440b58a351f8
+  sha256: a16b50e41ddbbf2bac236572e3e68c4ef9c76b88faf5cf840c79524c49000b06
 
 build:
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
